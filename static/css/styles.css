@@ -1,0 +1,28 @@
+.fondo{
+    background-color: rgba(161, 161, 161, 0.384);
+}
+.buscador{
+    height:75px;
+    background-color: rgb(255, 238, 0);
+}
+.principal{
+    height: 75px;
+    background-color: rgb(255, 238, 0);
+}
+.contenedor{
+    background-color: rgba(175, 175, 175, 0.26);
+    height: 600px;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.titulo{
+    text-align: center;
+    font-family: monospace;
+}
+.letraPrincipal{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: monospace;
+    
+}

@@ -14,10 +14,11 @@ h2{font-size: 2.7em;}
 h3{font-size: 2em}
 p{font-size: 1.25em;}
 ul{list-style: none;}
+li{font-size: 1.25;}
 
 button{
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.466);
@@ -40,18 +41,18 @@ header{
 }
 header .logo{
     margin: 0;
-    padding: 25px 30px ;
+    padding: 25px 30px;
     font-weight: bold;
-    color: rgba(0, 0, 255, 0.795);
-    font-size: 1.55em;
+    color: rgba(0, 0, 255, 0.829);
+    font-size: 1.6em;
 }
 
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
+
 header nav{
     display: flex;
     flex-direction:column;
@@ -69,68 +70,131 @@ header a{
 header a:hover{
     color: blue;
 }
+
 #hero{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
-    height: 90vh;
+    flex-direction:column;
+    height: 120vh;
     color:white;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ),url(/static/img/5751_10153700108146047_4525766113436597216_nb.jpg);
+    )
+    ,url(/static/img/5751_10153700108146047_4525766113436597216_nb.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:center center;
+}
+
+#grilla {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/static/img/688838e2-1ddd-448a-8282-d6a47ba959b0.jpeg);
+    background-size:cover;
     background-position: center center;
 }
-#nuestros-cursos{
+#grilla .container{
+    height: 70vh;
+    background-position: center center;
+    padding-top: 10px;
+}
+#nuestras-clases{
     background-color: rgb(30,30,30);
     color:rgb(245, 245, 245);
     text-align: center;
 }
 
-#nuestros-cursos .container{
-    padding:100px 12px;
-}
-#nuestros-cursos h2{
-    margin-top: 0;
+#nuestras-clases .container{
+    padding:10px 12px;
 }
 
-#nuestros-cursos p{
+#nuestras-clases h2{
+    margin-top: 0;
+    padding: 20px 10px;
+}
+
+#nuestras-clases p{
     display: none;
 }
-#nuestros-cursos .button{
+
+#nuestras-clases .button{
     background-image:url(/static/img/hqdefault.jpg);
 }
-#nuestros-cursos .carta{
+
+#nuestras-clases .carta{
     background-position: center center;
-    background-size: cover;
+    background-size:cover;
     padding: 50px;
     margin: 12px;
     border-radius: 15px;
 }
-.carta :first-child{
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(/static/img/artes_marciales_mixtas_ufc.jpg);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(/static/img/kick-9-1-862x290.jpg);
+}
+.carta:nth-child(3){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),url(/static/img/hqdefault.jpg);
+}
+#aplica-ya .container{
+    text-align: center;
+    background-color: rgb(30,30,30);
+}
+#aplica-ya h2{
+    color:white;
+    margin-top: 0%;
+    padding-top: 20px;
+}
+#aplica-ya button{
+    margin-bottom: 20px;
+}
+footer p{
+    margin:0%;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+    text-align: center;
+}
+footer.container{
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+}
 
-}
-.carta :nth-child(2){
-    background-image: linear-gradient
-    (0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)),url(/static/img/hqdefault.jpg);
-}
-}
-.carta :nth-child(3){
-    background-image: linear-gradient
-    (0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)),url(/static/img/hqdefault.jpg);
-}
+@media(min-width:720px){
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-right: 20px;
+    }
+
+    #grilla{
+ 
+        height: 150vh;
+    }
+
 }
